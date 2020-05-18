@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
-project(testy)
+project(myctestexec)
 
 ##
 ### Test definitions ###
@@ -26,7 +26,7 @@ add_subdirectory(test)
 include_directories("${PROJECT_SOURCE_DIR}/include")
 
 file(GLOB sources
-  "${PROJECT_SOURCE_DIR}/include/testy/*.h"
+  "${PROJECT_SOURCE_DIR}/include/myctestexec/*.h"
   "${PROJECT_SOURCE_DIR}/src/*.c")
 
-add_executable(testy ${sources})
+add_executable(myctestexec ${sources})
